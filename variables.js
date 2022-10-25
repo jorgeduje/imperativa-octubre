@@ -5,87 +5,133 @@
 
 // ANCHOR : OPERADORES
 
-// VAR -----> YA NO SE USA
 
-// LET Y CONST
+// VARIABLES
+// PALABRA CLAVE / NOMBRE / EL SIGNO = / LO QUE QUIERO GUARDAR
 
-// let nombre = "Jorge"
+// var
 
-let nombre = "jorge";
+// let y const
 
-let apellido = "Gonzalez";
+let nombre = 'jorge'
 
-const edad = 22;
+let apellido = "Duje"
 
-// STRING o CADENA DE CARACTERES
-// NUMBER o NUMEROS
-// BOOLEANO ----> SI / NO  ( TRUE O FALSE )
+const DNI = "12314123124"
 
-let frase = 'hola mi edad es'
+console.log(nombre)
 
-let cantidadMascotas = 3
+nombre = "pepito"
 
-let isLoggedUser = true
+console.log( nombre )
 
-// OTROS DATOS
-// UNDEFINED
+// STRING ---> CADENAS DE TEXTO
+// NUMBER ---> NUMEROS 
+// BOOLEANOS ---> SI O NO (TRUE / FALSE)
+
+let edad = 30.5
+
+edad = edad + 1
+console.log(edad)
+
+let frase = "a"
+
+console.log(frase)
+
+let elUsuarioEstaLogeado = false
+
+elUsuarioEstaLogeado = true
+
+// UNDEFINED 
 // NULL
-// NaN = NOT A NUMBER
+// NaN / NOT A NUMBER
 
-let cantidadHermanos = undefined // TODAVIA NO FUE DEFINIDO
+let nombreUsuario = undefined
 
-let hayUsuarios = null
+console.log( nombreUsuario )
 
-console.log( cantidadHermanos )
+let hayUsuariosConectados = null
 
-let num1 = 2
-let num2 = 3
+let num1 = "hola"
+let num2 = "chau"
 
-let resultado = num1 * num2
-// NaN
+let resultado = num1 + num2
+
 console.log( resultado )
 
-// LINK OPERADORES ARITMETICOS
+// ARITMETICOS 
+// + - / * -----> %
 
-// - + / * ----- MODULO %
+console.log( 12 % 3 )
 
-// PREGUNTO SI ES PAR
-let esPar = (11 % 2 === 0)
+// DETERMINAR SI EL NUMERO DADO ES MULTIPLO DE 7 
 
+let numeroDado = 14
 
-// LINK OPERADORES DE COMPARACION
+let elNumeroDadoEsMultiplo = ( numeroDado % 7 ) === 0
 
-// SIEMPRE SIEMPRE SIEMPRE RETORNAR O DEVUELVEN EN UN BOOLEANO
-
-10 <= 5
-
-11 >= 2
-
-12 == 2
-
-let a = 2
-let b = 15
-
-console.log("----------------------")
-console.log( a != b )
-console.log( a !== b )
-console.log( a == b )
-console.log( a === b )
-
-console.log("----------------------")
-
-// LINK OPERADORES LOGICOS
-
-// AND y OR ( && ---- ||)
-
-let uno = "hola"
-let dos = 15
-let tres = "no se"
+console.log( elNumeroDadoEsMultiplo )
 
 
-let verdaderoFalso = (dos <= 20 && uno === "hola" && 2 === 2)
+let num  = 15
 
-let verdaderoFalso2 = (dos < 2 || uno === "chau" || 1 === 2)
+let esPar = num % 2 === 0
 
-console.log(verdaderoFalso)
-console.log(verdaderoFalso2)
+
+// OPERADORES DE COMPARACION 
+
+// SIEMPRE DEVUELVEN UN BOOLEANO 
+
+12 > 15
+
+51 < 66
+
+66 <= 66
+
+12 >= 1231
+
+//LINK -
+console.log("--------------------")
+console.log("--------------------")
+console.log("--------------------")
+
+let x = "15"
+let y = 15
+
+// COMPARACION SIMPLE
+let res = x == y
+let res2 = x != y
+
+// COMPARACION Estricta
+
+let res3 = x === y
+let res4 = x !== y
+
+console.log(res2)
+console.log(res4)
+
+// OPERADORES LOGICOS
+
+// AND y OR 
+
+// AND &&
+// OR ||
+console.log("-----------")
+let edaddd = 28
+let nombreee = "pepito"
+
+let loDejoIngresar = edaddd >= 25 && (nombreee === "pepito" || nombre === "maria") && 10 > 25
+
+console.log("----------")
+let loDejoEntrar2 = edaddd >= 50 || nombreee === "pepitos" || 10 > 100
+
+console.log( loDejoEntrar2 )
+
+let nom = "pepito"
+let apell = "Perez"
+console.log( nom + " " + apell )
+
+let saludo = `Hola ${nom} como estas?`
+
+console.log(saludo)
+
