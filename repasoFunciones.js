@@ -1,90 +1,57 @@
-
-// El anterior de un numero
-// El triple de un numero
-// El anterior del triple de un numero ( usando las 2 funciones anteriores )
-
-// const anterior2 = ( num )=>{
-
-//     return num - 1
-
-// }
-
-const anterior = num => num - 1
-
-let resultadoAnterio = anterior(10)
-
-console.log( resultadoAnterio )
-
-
-const triple = num => num * 3
-
-let resultadoTriple = triple(5)
-
-console.log( resultadoTriple )
-
-// const anteriorDelTriple = numero => anterior( triple(numero) ) 
-
-const anteriorDelTriple = numero => {
-
-    let multiplicado = triple(numero)
-    let resultadoFinal = anterior(multiplicado)
-    return resultadoFinal
-}
-
-let y = anteriorDelTriple(5)
-console.log( y )
-
-
-// Crear la función promedioDeTresNumeros, la misma deberá calcular el promedio
-// de 3 números, que serán ingresados por parámetro.
-// Importante: promedioDeTresNumeros() deberá utilizar algunas funciones
-// previamente creadas de nuestra calculadora.
-
-// CREAR FUNCION SUMA
-// CREAR FUNCION DIVIDIR
-
-console.log("------------")
-console.log("------------")
-console.log("------------")
-
-function suma ( a, b ){
-
-    return a + b
+let nombre = "pepito"
+const saludar = ()=>{
+    let nombre = "algo"
+    return nombre
 
 }
 
-
-const dividir = function( a , b ){
-
-    return a / b
-
-}
-
-const promedioDeTresNumeros = ( num1, num2, num3 )=>{
-
-    let resultadoSuma = suma(num1, num2)
-    let resultadoSumaOficial = suma(resultadoSuma, num3)
-    let promedio = dividir( resultadoSumaOficial, 3 )
-    return promedio
-
-}
-
-let promedioFinal = promedioDeTresNumeros(7,8,9)
-
-console.log(promedioFinal)
-
-// CREAR UNA FUNCION PARA SALUDAR A UN USUARIO CUANDO SE LOGEE A MI APP
-
-
-let nombreUsuario = "pepito"
-let apellido = "fulanito"
-
-const saludarUsuario = nom => {
-    // return 'Hola ' + nom + "como estas?" // CONCATENACION
-    return `Hola ${nom} ${apellido} como estas?` // INTERPOLACION 
-}
-
-let saludo = saludarUsuario( nombreUsuario )
-
+let saludo = saludar()
 console.log( saludo )
+
+// CREAR UNA FUNCION QUE DETERMINE SI EL NUMERO A ES MAYOR O IGUAL QUE B
+// DEVOLVER UN BOOLEANO
+
+const determinarSiEsMayor = (numA, numB)=> numA >= numB
+let esMayor = determinarSiEsMayor(1, 5)
+console.log(esMayor)
+
+let edad = 12
+
+console.log(edad)
+
+// edad++
+
+// edad = edad + 1
+// edad += 1
+
+edad -= 10
+
+console.log(edad)
+
+// CREAR UNA FUNCION QUE SUME 2 NUMEROS
+// CREAR UNA FUNCION QUE DIVIDA EL NUM A POR EL NUMERO B
+// CREAR UNA FUNCION QUE DEVUELVA EL PROMEDIO DE 3 NOTAS UTILIZANDO LAS 2 ANTERIORES
+
+console.log("-----------------")
+const sumarNumeros = (a,b) => a + b
+
+sumarNumeros(20, 30) // 50
+
+const dividirNumeros = (a,b) => a / b
+
+const promedioDeTres = ( nota1, nota2, nota3 )=>{
+
+    // let suma = sumarNumeros( sumarNumeros(nota1, nota2), nota3 )
+    let suma1 = sumarNumeros(nota1, nota2) // 7
+    let suma2 = sumarNumeros( suma1, nota3) // 14
+    return suma2 / 3
+    // let sumaFinal = sumarNumeros( suma1 , nota3)
+
+}
+
+
+const resultado = promedioDeTres(3, 5, 7)
+console.log( resultado )
+
+
 
