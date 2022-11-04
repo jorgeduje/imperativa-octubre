@@ -84,10 +84,6 @@ const irYvenir = ()=>{
 irYvenir()
 
 
-
-
-
-
 // 3) crear una funcion que reciba un numero por parametros y que muestre por consola
 // todos los impares que hay en entre el 0 y ese numero.
 
