@@ -28,6 +28,8 @@ let estudiante = {
 let promedioAlumno =  estudiante.promediar()
 console.log( promedioAlumno )
 
+// console.log( estudiante."nombre" )
+// console.log( estudiante["nombre"] )
 
 // TODO ---> Encontrar el primer elemento que cumpla con la condicion de
 // haber ganado un ticket y que ademas sea mayor de edad( 18 años o mas )
@@ -148,3 +150,11 @@ const multiplicar = (a, b) => {
         return a * b
     }
 }
+
+
+const mostrarPropiedad = (obj, prop)=>{
+    console.log(obj[prop])
+}
+mostrarPropiedad(estudiante, "nombre")
+
+
