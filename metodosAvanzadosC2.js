@@ -146,7 +146,7 @@ console.log(total)
 
 let numerosMil = [ 2, 5, 1, 6, 12, 3]
 
-productos.sort( ( a, b )=> b - a  )
+numerosMil.sort( ( a, b )=> b - a  )
 
 productos.sort( (a, b)=>{
     if (a.nombre > b.nombre) {
